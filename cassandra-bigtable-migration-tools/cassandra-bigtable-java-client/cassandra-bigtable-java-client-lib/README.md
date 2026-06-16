@@ -7,7 +7,7 @@ The **Cassandra Bigtable Java Client** allows your Cassandra-based Java applicat
 Add the following dependency to your Maven `pom.xml`, replacing `VERSION-HERE` with the latest version.
 
 <!-- x-release-please-start-version -->
-> **The latest version is: ` 0.3.2-SNAPSHOT `**
+> **The latest version is: ` 0.5.1-SNAPSHOT `**
 <!-- x-release-please-end-version -->
 
 ```xml
@@ -86,7 +86,7 @@ class MyClass {
     // Create the CqlSession
     try (CqlSession session = bigtableCqlSessionFactory.newSession()) {
       // Execute query
-      PreparedStatement preparedInsert = session.prepare("<query here>");
+      PreparedStatement preparedInsert = session.prepare("<your query here>");
       // ...
     }
   }

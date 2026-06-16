@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.cloud.kafka.connect.bigtable</groupId>
     <artifactId>sink-integration-tests</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version><!-- {x-version-update:kafka-connect-bigtable-sink:current} -->
     <packaging>jar</packaging>
     <name>kafka-connect-bigtable-sink-integration-tests</name>
     <description>
@@ -13,7 +13,7 @@
     <parent>
         <groupId>com.google.cloud.kafka.connect.bigtable</groupId>
         <artifactId>sink-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version><!-- {x-version-update:kafka-connect-bigtable-sink:current} -->
     </parent>
     <properties>
         <!--
@@ -30,10 +30,10 @@
         -->
         <protobuf3.version>3.25.6</protobuf3.version>
         <maven.clean.version>3.4.1</maven.clean.version>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <integration.test.plugin.path>${project.basedir}/integration_test_plugins</integration.test.plugin.path>
-        <google.sink.jar.path>${project.basedir}/../sink/target/sink-${project.version}.jar</google.sink.jar.path>
+        <google.sink.jar.path>${project.basedir}/../sink/target/kafka-connect-bigtable-sink.jar</google.sink.jar.path>
         <google.sink.jar.plugin.dir>${integration.test.plugin.path}/google-sink</google.sink.jar.plugin.dir>
     </properties>
     <dependencies>
